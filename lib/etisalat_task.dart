@@ -4,7 +4,7 @@ library etisalat_task;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-class ListWheelScrollViewX extends StatelessWidget {
+class ListWheelScrollViewHorizontal extends StatelessWidget {
   final Axis scrollDirection;
 
   final List<Widget> children;
@@ -37,7 +37,7 @@ class ListWheelScrollViewX extends StatelessWidget {
 
   final Clip clipBehavior;
 
-  const ListWheelScrollViewX({
+  const ListWheelScrollViewHorizontal({
     Key key,
     this.scrollDirection = Axis.vertical,
     this.controller,
@@ -57,7 +57,7 @@ class ListWheelScrollViewX extends StatelessWidget {
   })  : childDelegate = null,
         super(key: key);
 
-  const ListWheelScrollViewX.useDelegate({
+  const ListWheelScrollViewHorizontal.useDelegate({
     Key key,
     this.scrollDirection = Axis.vertical,
     this.controller,
